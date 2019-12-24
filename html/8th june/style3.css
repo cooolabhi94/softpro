@@ -1,0 +1,39 @@
+body
+{
+  margin-top: 0px;
+}
+.wrap
+{
+  background-color: yellow;
+  min-width: 600px;
+  width: 80%;
+
+  margin: auto;
+  overflow: hidden;
+}
+.content
+{
+  background-color: red;
+  width: 80%;
+  float: left;
+}
+aside
+{
+  min-width: 100px;
+  background-color: green;
+  width: 20%;
+  float: right;
+}
+.content,aside
+{
+  height: 600px;
+}
+aside ul
+{
+  padding-left: 0px;
+  width: 100px;
+}
+li
+{
+  list-style: none;
+}

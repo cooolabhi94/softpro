@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table of a number</title>
+<script type="text/javascript">
+function getTable()
+{
+  var Txt,Num,i,r="",pr,sp;
+  Txt=document.getElementById("TxtNum");
+  Num=parseInt(Txt.value);
+  sp=document.getElementById("spnum");
+  if(Txt.value.length>0)
+  {
+  sp.innerHTML="";
+  Txt.style.border="1px solid silver";
+
+  for(i=1;i<=10;i++)
+  {
+  r=r+(Num*i)+"<br/>";
+  }
+  pr=document.getElementById("para");
+  pr.innerHTML=r;
+  }
+  else
+  {
+  sp.innerHTML="please enter a number.";
+  Txt.style.border="1px solid red";
+  }
+}
+</script>
+</head>
+  <body>
+  <h1>table of a number:</h1>
+    <hr>
+    enter a number:
+    <input type="text" id="TxtNum" />
+    <span id="spnum" style="color:red;"></span>
+    <br/><br/>
+    <button onclick="getTable()">Get Table</button>
+    <p id="para"></p>
+  </body>
+</html>

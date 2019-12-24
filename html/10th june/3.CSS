@@ -1,0 +1,21 @@
+
+#outer
+{height:800px;
+width:800px;
+background-color: blue;
+}
+.white
+{
+  height: 100px;
+  width: 100px;
+  float:left;
+  background-color: red;
+
+}
+.black{
+  height: 100px;
+  width: 100px;
+  float:left;
+  background-color: green;
+
+}

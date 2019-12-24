@@ -1,0 +1,7 @@
+Css
+It stands for cascading style sheet which is responsible for look and feel of the webpage
+
+Types of css
+1. Inline - 1st priority
+2. Internal
+3. External

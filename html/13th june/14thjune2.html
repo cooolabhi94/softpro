@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function operations(x){
+      var n1,n2,res;
+      n1=parseInt(document.getElementById("TxtNum1").value);
+      n2=parseInt(document.getElementById("TxtNum2").value);
+ switch (x.value) {
+        case "+":
+          res=n1+n2;
+          break;
+        case "-":
+        res=n1-n2;
+        break;
+        case "*":
+          res=n1*n2;
+          break;
+        case "/":
+          res=n1/n2;
+          break;
+        default:
+        alert("invalid operations")
+        break;
+      }
+    document.getElementById("TxtRes").value=res;
+    }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="TxtNum1" placeholder="Enter First Number" /><br><br>
+    <input type="number" id="TxtNum2" placeholder="Enter second Number" /><br><br>
+    <input type="number" id="TxtRes" placeholder="Result" /><br><br>
+    <button value="+" onclick="operations(this)">Add</button>
+    <button value="-" onclick="operations(this)">Sub</button>
+    <button value="*" onclick="operations(this)">Mul</button>
+    <button value="/" onclick="operations(this)">Div</button>
+  </body>
+</html>

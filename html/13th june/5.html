@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <script>
+  function check()
+  {
+    var myfile=document.getElementById("ufile");
+    if(myfile.files!=undefined)
+    {
+
+      var fsize=((myfile.files[0].size)/1024)/1024;
+
+if(myfile.files[0]!=undefined)
+{
+var fname=myfile.files[0].name;
+var ftype=myfile.files[0].type;
+var lastDot=fname.lastIndexOf('.');
+var ext=fname.substring(lastDot+1)
+if(ext.toUpperCase()=="png" || ext=="jpg" ||ext=="jpeg")
+if(fsize<=1)
+{sp.innerText="ok";
+}
+  }    alert(ext);
+
+
+  else{sp.innertext="please select files too large";
+}
+}
+
+
+    else {
+      sp.innertext="file  not found";
+    }
+
+  }
+  </script>
+</head>
+<body>
+select your photo:
+<input type="file" id="ufile"/>
+<span id="sp" style="color:red"></span>
+<button onclick="check()">file  name</button>
+</body>
+</html>

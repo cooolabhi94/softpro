@@ -1,0 +1,21 @@
+#menu
+{
+  height: 50px;
+  width: 700px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: black;
+}
+#menu ul
+{
+list-style-type: none;
+
+}
+#menu ul li
+{
+  display: inline;
+  padding: 10px;
+  color: white;
+}

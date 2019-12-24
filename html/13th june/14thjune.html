@@ -1,0 +1,30 @@
+<!--create a html page to find the reverse of a number-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>14th June</title>
+    <script type="text/javascript">
+    function getReverse(){
+    var TxtR,Num,r=0,i;
+    Num=parseInt(document.getElementById("TextNum").value);
+    i=Num;
+    while(i!=0)
+    {
+      r=r*10+i%10;
+      i=parseInt(i/10);
+    }
+    document.getElementById("TxtResult").value=r;
+  }
+    </script>
+  </head>
+  <body>
+    <h1>Enter a number</h1>
+    <input type="number" id="TextNum" />
+    <br/><br/>
+    <button onclick="getReverse()">Get Reverse</button>
+    <br/><br/>
+    <span id="sp"></span>
+    <input type="number" id="TxtResult" />
+  </body>
+</html>

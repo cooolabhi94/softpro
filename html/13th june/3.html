@@ -1,0 +1,31 @@
+ <!doctype html>
+<html>
+<!--creating html for addition-->
+<head>
+  <script>
+  function addNum()
+  {
+    //var x=document.getElementById("TxtNum");
+   //alert(x); //for checking
+ var Txt1,Txt2,Num1,Num2,Result,TextRes;
+ Txt1=parseInt(document.getElementById("TxtNum1").value);
+ Txt2=document.getElementById("TxtNum2");
+Num2=parseInt(Txt2.value);
+Result=Txt1+Num2;
+//alert(Result); adding result box
+TxtRes=document.getElementById("TxtResult");
+TxtRes.value=Result;//set
+
+}
+</script></head>
+  <body>
+  <h1>Addition of two number</h1>
+  <hr/>
+  <input type="number" id="TxtNum1" placeholder="enter a no:" />
+  <br><br>
+  <input type="number" id="TxtNum2" placeholder="enter a no:" />
+  <br><br>
+  <input type="button" value="Add" onclick="addNum()"/>
+  <input type="number" id="TxtResult" placeholder="Result"/>
+
+</body></html>

@@ -1,0 +1,47 @@
+#wrapper
+{
+  margin: auto;
+  width: 640px;
+  height: 640px;
+  background-color: grey;
+}
+#block1
+{
+  position: absolute;
+  margin: 53px 0px;
+  width: 534px;
+  height: 534px;
+  background-color: blue;
+}
+#block2
+{
+  position: absolute;
+  margin: 53px 0px;
+  width: 428px;
+  height: 428px;
+  background-color: red;
+}
+#block3
+{
+  position: absolute;
+  margin: 53px 0px;
+  width: 322px;
+  height: 322px;
+  background-color: green;
+}
+#block4
+{
+  position: absolute;
+  margin: 53px 0px;
+  width: 216px;
+  height: 216px;
+  background-color: black;
+}
+#block5
+{
+  position: absolute;
+  margin: 53px 0px;
+  width: 110px;
+  height: 110px;
+  background-color: white;
+}

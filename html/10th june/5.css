@@ -1,0 +1,60 @@
+#wrapper
+{height: 517px;
+width:500px;}
+h2
+{font-size: 3em;}
+
+
+  span.one
+  {color: blue;}
+span#two
+{color: red;}
+
+span#three
+{color: yellow;}
+span#four
+{color: green;}
+span#tt
+{margin: 1px;
+}
+#inn
+{height: 293px;
+width: 317px;
+box-shadow: 1px 3px 4px black;
+background-color:lightgrey;}
+table {
+  margin-left: 20px;
+  margin-top:50px ;
+  padding-top: 70px;
+
+}
+#new
+{ text-align: center;
+height: 25px;
+width:180px;
+
+margin-left: 18px;
+color: #0080ff;
+
+
+
+}
+ div #new  input
+{color: white;
+background-color:#33adff; }
+#upper
+{margin-top: 15px;
+height: 25px;
+width:330px;
+
+}
+#one{
+  float:left;
+}
+#two2{
+  float:right;
+  margin-right: 20px;
+}
+h4
+{font-size: 14px;
+padding-bottom: -20px;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function check(){
+      var mob,m,sp,status=false;
+      mob=document.getElementById("TxtMob").value;
+      sp=document.getElementById("spmob");
+      var f=mob.charCodeAt(0);
+      if(f==55 || f==56 || f==57)
+      {alert("ok");
+      if (mob.length==10)
+      {
+        status=true;
+      }
+      else {
+        status=false;
+      }}
+      else {
+        status:false;
+      }
+if(status==true)
+{
+        sp.innerText="valid mobile number";
+        sp.style.color="black";
+      }
+      else {  sp.innerText="invalid mobile number";
+        sp.style.color="red";
+
+      }}
+  </script>
+  </head>
+  <body>
+   Enter Mobile Number :
+   <input type="number" id="TxtMob"/>
+   <span id="spmob" style="color:red"></span>
+   <br><br>
+  <button onclick="check()">check</button>
+  </body>
+</html>

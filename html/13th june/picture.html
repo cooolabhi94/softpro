@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <script>
+  function check()
+  {
+    var myfile=document.getElementById("ufile");
+    if(myfile.files!=undefined)
+    { alert(myfile.files[0].name);
+    }
+    else {
+      sp.innertext="file not found";
+    }
+
+  }
+  </script>
+</head>
+<body>
+select your photo:
+<input type="file" id="ufile"/>
+<span id="sp" style="color:red"></span>
+<button onclick="check()">Mobile no.</button>
+</body>
+</html>
