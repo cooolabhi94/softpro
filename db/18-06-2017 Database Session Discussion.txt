@@ -1,0 +1,300 @@
+
+Interfaces:- If you have requirement specifications but you
+don't know about its implementation then you can use 
+interfaces.
+
+Abstract Classes:- If you have requirement specification you 
+know the implementation, But not complete implementation. Then
+you can use Abstract classes.
+
+Concret Classes:- If you have requirement specifications you
+know the complete implementation then you can use concret
+classes.
+_____________________________________________________________
+
+Database Commands implementations:-
+
+1. Use of create command to create new user:-
+
+Syntax:-
+
+create user <user-name> identified by <password>;
+E.g.
+create user mydb identified by mydb;
+
+2. Use of grant command to give priviliges to database user:-
+Syntax:-
+
+grant <priviliges> to <username>;
+
+E.g.
+grant dba to mydb;
+
+Use of create command to create a table:-
+____________________________________________________
+Syntax:-
+
+create table <table-name>
+(
+<column-name> <data-type>,
+<column-name> <data-type>,
+<column-name> <data-type>
+);
+
+E.g.
+
+create table empinfo
+(
+empid number(5) primary key,
+empname varchar2(20),
+department varchar2(20),
+salary number(8)
+);
+
+Use of insert command to insert data into the table:-
+_____________________________________________________
+
+Syntax:-
+
+insert into <table-name> values(<value1>,<value2>,<value3>);
+
+E.g.
+insert into empinfo values(1001,'Anurag','Development',45000);
+
+insert into empinfo(empid,empname,department) values(1002,'Jitendra','Testing');
+
+Use of where clause:-
+_________________________
+If you want to perform any operation based on some condition, then
+you can specify the where clause. To specify condition with
+where clause we use some operators like:-
+
+=	To compare the values
+>	greator than
+<	less than
+>=	greator than or equal to
+<=	less than or equal to
+<>	not equal
+like	pattern  matching
+in 	in operator is check value in given values
+between specifies the range
+
+E.g.
+i.) To select those records in which salary is more than 40000.
+
+select * from empinfo where salary>40000;
+
+Use of like operator:-
+___________________________
+
+select * from empinfo where empname like 'A%';
+
+Use of delete command:-
+____________________________
+
+Syntax:-
+
+delete from <table-name> where <condition>;
+
+delete from empinfo where empid=1001;
+
+Use of update command:-
+_____________________________
+
+The update command is used to modify the data of database object.
+
+Syntax:-
+
+update <table-name> set <column-name>=<value>,<column-name>=<value>
+where <condition>;
+
+update empinfo set salary=45000 where empid=1004;
+
+Use of truncate command to tuncate table:-
+____________________________________________
+
+Syntax:-
+
+truncate table <table-name>;
+
+truncate table empinfo;
+
+Use of drop command:-
+_____________________________________________
+
+Syntax:-
+
+drop table <table-name>;
+
+drop table empinfo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

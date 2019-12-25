@@ -1,0 +1,73 @@
+Programming Languages:-
+
+-->Programming languages provide raw materials.
+--->Programming languages provides syntaxes and symantics for
+software development.
+---> C, C++, Java, C# and etc..... are programming languages.
+
+Software Technologies:-
+
+--->Software technologies provides rules and guidelines.
+--->Software technologies are non installable s/w. But the 
+softwares developed by using software technologies are 
+installable.
+---> ASP.Net, Servlets, JDBC, JSP and etc are software 
+technologies.
+
+Types of software technologies:-
+
+There are two types of software technologies:-
+
+1. Open Source Technologies:- The Open source technologies
+are open for all software vendors to develop software 
+applications. All java software technologies are open source.
+
+2. Proprioriterary Technologies:- The Technologies which are
+closed for all software vendors are proprioriterary 
+technologies. All .Net Technologies are closed technologies.
+
+Frameworks:- Frameworks are installable softwares. By using
+frameworks you can develop the application softwares rapidly.
+The framework take care of common logics.
+
+---> If you work with software technologies then you write
+common logics and application specific logics.
+---> If you work with frameworks then you write only application
+specific logics. The framework take care of common logics.
+
+E.g.:- MVC 5.2 , MVC 6.0 , Spring, Hibernate, Struts, JSf and
+etc are frameworks.
+______________________________________________________________
+______________________________________________________________
+
+----->In object oriented programming system the interfaces
+provides rules.
+-----> The class provides guidelines.
+-----> Abstract class provides rules and guidelines.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#e68652"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOUR SCORE"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_marginTop="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="8"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:id="@+id/tvfinalscore"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retries:"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="35sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:id="@+id/tvretries"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play again"
+        android:id="@+id/btnplay"/>
+
+
+
+
+
+
+
+</LinearLayout>

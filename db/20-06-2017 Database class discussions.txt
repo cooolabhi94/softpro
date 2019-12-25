@@ -1,0 +1,268 @@
+Foreign Key Creation:-
+___________________________
+create table employeeinfo
+(
+empid number(5) primary key,
+empname varchar2(20),
+salary number(8)
+);
+create table orders
+(
+pid number(5) primary key,
+pname varchar2(20),
+qty number(5),
+empid number(5),
+foreign key(empid) references employeeinfo(empid)
+);
+_______________________________________________________
+PL/SQL:- The PL/SQL is stand for Procedural Language/
+Structured Query Language. The PL/SQL contains the
+program instructions and SQL statements. The PL/SQL
+supports object oriented programming systems.
+
+How to declare variable in PL/SQL:-
+
+variable-name data-type(size);
+________________________________
+a varchar2(20);
+id number(5);
+
+Initialization of variable:-
+________________________________
+id:=1001;
+
+How to take input from user for a variable:-
+____________________________________________
+
+id:=&id;	//Enter the value for id: 1001
+Old : id:=&id;
+New : id:=1001;	
+
+How to display the output:-
+___________________________
+dbms_output.put_line('Hello! '||id);
+
+______________________________________________________
+Structure of PL/SQL code:-
+
+declare		
+id number(5);
+salary number(5);
+begin
+id:=&id;
+salary:=&salary;
+dbms_output.put_line('Employee Id: '||id);
+dbms_output.put_line('Employee Salary: '||salary);
+end;
+/
+______________________________________________________
+if:-
+
+if condition then
+//Code
+end if;
+
+else if:-
+if condition then
+//code 1
+else
+//code 2
+end if;
+_____________________________________________________
+
+Ex:- To check given number is even or odd.
+
+declare
+n number(5);
+begin
+n:=&n;
+if n mod 2=0 then
+dbms_output.put_line('The number '||n||' is even');
+else
+dbms_output.put_line('The number '||n||' is odd');
+end if;
+end;
+/
+______________________________________________________
+Task:- 
+---> Create a table consumer with fields consumerid,
+consumername,units,bill.
+---> Take consumerid, consumername and units as user
+input. Based on units calculate bill on following
+parameters:-
+
+1-150			2.40/unit
+for next 151-300	3.00/unit
+for next more than 300	3.20/unit
+---> Insert the values of consumerid,consumername,units
+and bill into consumer table. Also perform commit 
+command.
+______________________________________________________
+create table consumer
+(
+consumerid varchar2(10) primary key,
+consumername varchar2(20),
+units number(5),
+bill number(10,5)
+);
+_____________________________________________________
+declare
+conid varchar2(10);
+conname varchar2(20);
+units number(5);
+bill number(10,5);
+begin
+conid:=&conid;
+conname:=&conname;
+units:=&units;
+if units<=150 then
+bill:=units*2.40;
+elsif units>150 and units<=300 then
+bill:=(150*2.40)+(units-150)*3;
+else
+bill:=(150*2.40)+(150*3)+(units-300)*3.20;
+end if;
+dbms_output.put_line('Hello! '||conname||' your bill ='||bill);
+insert into consumer values(conid,conname,units,bill);
+dbms_output.put_line('Bill generated');
+commit;
+end;
+/
+_____________________________________________________________
+create table exp
+(
+empid number(5) primary key,
+empname varchar2(20),
+salary number(8)
+);
+insert into exp values(1001,'Sanchit',20000);
+insert into exp values(1002,'Santosh',25000);
+insert into exp values(1003,'Kavita',35000);
+____________________________________________________________
+declare
+eid number(5);
+ename varchar2(20);
+sal number(8);
+begin
+eid:=&eid;
+ename:=&ename;
+sal:=&sal;
+insert into exp values(eid,ename,sal);
+savepoint sp;
+update exp set salary=23000 where empname='Sanchit';
+update exp set salary=27000 where empname='Santosh';
+select sum(salary) into sal from exp;
+if sal>120000 then
+rollback to sp;
+end if;
+commit;
+end;
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

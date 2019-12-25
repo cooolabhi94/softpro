@@ -1,0 +1,133 @@
+			Database Session
+
+Data:- The raw facts and figures are called data.
+
+Information:- The meaningfull data is called information.
+
+Database:- The collection of information is known as database.
+
+Database Management System:- The database management system is
+an application software which is used to manage database.
+It provide facilities to create, access and manipulate database.
+
+
+E.g. Oracle, SQL Server, MS Access, MySql, Sybase, DB2 and etc
+are some popular DBMS.
+
+SQL (Structured Query Language):- The SQL is stand for structured
+query language supplies set of commands to perform database
+operations. Based on database operations the SQL is categorized
+in four parts:-
+
+1. DDL (Data Definition Language)
+2. DML (Data Manipulation Language)
+3. DCL (Data Control Language)
+4. TCL (Transaction Control Language)
+
+
+Commands of DDL:-
+i.) create:- The create command is used to create a new 
+database object.
+ii.) alter:- The alter command is used to modify database 
+object.
+iii.) drop:- The drop command is used to delete database 
+object.
+iv.) truncate:- The truncate command is used to delete all
+data from database object. You cann't rollback the truncate.
+v.) backup:- The backup command is used to take backup of the
+database.
+vi.) restore:- The restore command is used to reconstruct
+database from its backup file.
+
+Commands of DML:-
+
+i.) insert:- The insert command is used to insert data into
+database object.
+ii.) delete:- The delete command is used to delete records
+from database object.
+iii.) update:- The update command is used to modify data of 
+database object.
+iv.) select:- The select command is used to retrieve data from
+database object.
+
+Commands of DCL:-
+
+i.) grant:- The grant command is used to give priviliges 
+(rights) to database user.
+ii.) revoke:- The revoke command is just opposite to grant
+command it used to take off rights from database user.
+iii.) rename:- The rename command is used to change the name
+of database object.
+
+Commands of TCL:-
+
+i.) commit
+ii.) rollback
+iii.) savepoint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

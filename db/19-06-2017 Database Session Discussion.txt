@@ -1,0 +1,281 @@
+			Use of Alter
+_________________________________________________________________
+The alter command is used to modify the structure of database
+object.
+
+create table login
+(
+userid varchar2(20) primary key,
+passwd varchar2(10)
+);
+
+Use of alter command to add new column:-
+__________________________________________
+Syntax:-
+
+alter table <table-name> add <column-name> <data-type>;
+E.g.
+alter table login add usertype varchar2(20);
+
+Use of alter command to drop a column:-
+_________________________________________
+Syntax:-
+
+alter table <table-name> drop column <column-name>;
+E.g.
+alter table login drop column usertype;
+
+Use of alter command to modify a column:-
+_________________________________________
+Syntax:-
+
+alter table <table-name> modify <column-name> <data-type>;
+
+alter table login modify passwd varchar2(15) not null;
+
+Use of rename command to rename a database object:-
+______________________________________________________
+
+Syntax:-
+
+rename <old-name> to <new-name>;
+rename login to logininfo;
+
+Join Operations:-
+____________________
+If you want to select the data from two tables then you can
+perform join operations.
+
+create table empinfo
+(
+empid number(5) primary key,
+empname varchar2(20)
+);
+create table product
+(
+pid number(5) primary key,
+pname varchar2(20),
+empid number(5)
+);
+
+insert into empinfo values(1001,'John');
+insert into empinfo values(1002,'Brown');
+insert into empinfo values(1003,'Bean');
+insert into empinfo values(1004,'Lily');
+
+insert into product values(101,'Printer',1001);
+insert into product values(102,'Scanner',1002);
+insert into product values(103,'Plloter',1002);
+insert into product values(104,'Laptop',1003);
+insert into product(pid,pname) values(105,'Projector');
+
+SQL Statement for Natural Join:-
+
+select empname,pname from empinfo,product
+where empinfo.empid=product.empid;
+
+Left Join:- When you perform left join then all records of left 
+table will displayed and matching records of right table will 
+displayed.
+
+select empname,pname from empinfo left join product
+on empinfo.empid=product.empid;
+
+Right Join:- When you perform right join then all records of right
+table will displayed and matching record of left table will 
+displayed.
+
+select empname,pname from empinfo right join product
+on empinfo.empid=product.empid;
+
+How to create composite key:-
+__________________________________
+If you combine more than one columns to create primary key then 
+resultant key is called composite key.
+
+create table shipment
+(
+sno varchar2(5),
+pno varchar2(5),
+qty number(5),
+primary key(sno,pno)
+);
+Use of check constraint:-
+__________________________________
+The check constraint is used to provide validation into the 
+database object.
+
+create table spiemp
+(
+empid varchar2(10) check (empid like 'spi%'),
+empname varchar2(20),
+country varchar2(20) check(country in ('India','Nepal')),
+salary number(8) check(salary<=100000),
+primary key(empid)
+);
+
+View:- The View is a logical table. If we change in records of
+view, then records of actual table will also affected.
+
+create table employee
+(
+empid number(5) primary key,
+empname varchar2(20),
+grade varchar2(10),
+salary number(8)
+);
+
+create view emp as select empid,empname from employee;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
