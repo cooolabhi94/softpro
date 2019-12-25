@@ -1,0 +1,13 @@
+ tr td:nth-child(odd)
+        {
+          color: blue;
+        }
+        tr td:nth-child(even)
+        {
+          color: green;}
+line-height: 1.5em;
+ background-size: cover;
+
+div #new  input
+{color: white;
+background-color:#33adff; }

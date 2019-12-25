@@ -1,0 +1,14 @@
+#wrapper
+{
+  width: 612px;
+  height: 792px;
+  border: 1px solid black;
+}
+#main
+{
+position: absolute;
+width: 545px;
+height: 737px;
+border: 1px solid black;
+margin: 23px 33.5px;
+}
